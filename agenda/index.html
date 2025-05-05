@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="./src/index.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-4">
+      <ul class="flex justify-around text-white">
+        <li><a href="#" class="hover:text-gray-400">Inicio</a></li>
+        <li><a href="#" class="hover:text-gray-400">Acerca de</a></li>
+        <li><a href="#" class="hover:text-gray-400">Contacto</a></li>
+      </ul>
+    </nav>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <h1 class="text-4xl font-extrabold text-center text-blue-500">
+      ¡Bienvenido a Tailwind CSS!
+    </h1>
+    <p class="text-lg text-gray-700 mt-4">
+      Tailwind te permite diseñar rápidamente con clases predefinidas.
+    </p>
+    <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
+      Haz clic aquí
+    </button>
+    <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg p-6 mt-6">
+      <h2 class="text-2xl font-semibold text-gray-800">Tarjeta de ejemplo</h2>
+      <p class="text-gray-600 mt-2">
+        Este es un ejemplo de cómo usar Tailwind para crear un diseño limpio y moderno.
+      </p>
+    </div>
+    <div class="flex justify-center items-center h-screen bg-gray-100">
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold">Centrado con Flexbox</h3>
+        <p class="text-gray-600">Este contenedor está centrado vertical y horizontalmente.</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+      <div class="bg-blue-200 p-4 rounded">Elemento 1</div>
+      <div class="bg-blue-300 p-4 rounded">Elemento 2</div>
+      <div class="bg-blue-400 p-4 rounded">Elemento 3</div>
+      <div class="bg-red-500 p-4 rounded">Elemento 4</div>
+    </div>
+  </body>
+</html>
