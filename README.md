@@ -17,7 +17,5 @@ Este proyecto utiliza **Vite** como herramienta de desarrollo junto con **React*
 
 ```bash
 npm create vite@latest
-```bash
 npm install react-router-dom
-```bash
 npm install tailwindcss @tailwindcss/vite
