@@ -52,18 +52,21 @@ const doctoresPorServicio = {
 };
 
 const FormularioEjemplo = () => {
-  const [institucionSeleccionada, setInstitucionSeleccionada] = useState('');
-  const [servicioSeleccionado, setServicioSeleccionado] = useState('');
-  const [doctorSeleccionado, setDoctorSeleccionado] = useState('');
+  // Cambiamos los tipos de estado para manejar números en lugar de strings
+  const [institucionSeleccionada, setInstitucionSeleccionada] = useState<number | ''>('');
+  const [servicioSeleccionado, setServicioSeleccionado] = useState<number | ''>('');
+  const [doctorSeleccionado, setDoctorSeleccionado] = useState<number | ''>('');
 
   const handleInstitucionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setInstitucionSeleccionada(e.target.value);
+    // Convertimos el valor a número
+    setInstitucionSeleccionada(e.target.value ? Number(e.target.value) : '');
     setServicioSeleccionado('');
     setDoctorSeleccionado('');
   };
 
   const handleServicioChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setServicioSeleccionado(e.target.value);
+    // Convertimos el valor a número
+    setServicioSeleccionado(e.target.value ? Number(e.target.value) : '');
     setDoctorSeleccionado('');
   };
 
@@ -102,12 +105,12 @@ const FormularioEjemplo = () => {
                 </label>
                 <select
                   className="w-full p-2 border rounded-md"
-                  value={servicioSeleccionado}
+                  value={servicioSeleccionado.toString()}
                   onChange={handleServicioChange}
                 >
                   <option value="">Seleccione un servicio</option>
                   {serviciosPorInstitucion[institucionSeleccionada as keyof typeof serviciosPorInstitucion]?.map((serv) => (
-                    <option key={serv.id} value={serv.id}>
+                    <option key={serv.id} value={serv.id.toString()}>
                       {serv.nombre}
                     </option>
                   ))}
@@ -122,12 +125,12 @@ const FormularioEjemplo = () => {
                 </label>
                 <select
                   className="w-full p-2 border rounded-md"
-                  value={doctorSeleccionado}
-                  onChange={(e) => setDoctorSeleccionado(e.target.value)}
+                  value={doctorSeleccionado.toString()}
+                  onChange={(e) => setDoctorSeleccionado(e.target.value ? Number(e.target.value) : '')}
                 >
                   <option value="">Seleccione un doctor</option>
                   {doctoresPorServicio[servicioSeleccionado as keyof typeof doctoresPorServicio]?.map((doc) => (
-                    <option key={doc.id} value={doc.id}>
+                    <option key={doc.id} value={doc.id.toString()}>
                       {doc.nombre}
                     </option>
                   ))}
