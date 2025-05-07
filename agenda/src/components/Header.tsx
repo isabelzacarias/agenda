@@ -21,13 +21,13 @@ const Header = () => {
             <Link to="/" className="text-white hover:text-purple-200 transition-colors duration-200">
               Inicio
             </Link>
-            <Link to="/agendar" className="text-white hover:text-purple-200 transition-colors duration-200">
+            <Link to="/formulario" className="text-white hover:text-purple-200 transition-colors duration-200">
               Agendar Cita
             </Link>
-            <Link to="/historial" className="text-white hover:text-purple-200 transition-colors duration-200">
+            <Link to="/formulario" className="text-white hover:text-purple-200 transition-colors duration-200">
               Historial
             </Link>
-            <Link to="/contacto" className="text-white hover:text-purple-200 transition-colors duration-200">
+            <Link to="/formulario" className="text-white hover:text-purple-200 transition-colors duration-200">
               Contacto
             </Link>
           </nav>
