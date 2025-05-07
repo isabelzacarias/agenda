@@ -62,10 +62,10 @@ const Header = () => {
               <Link to="/formulario" className="block text-white hover:bg-purple-600 rounded px-3 py-2">
                 Agendar Cita
               </Link>
-              <Link to="/historial" className="block text-white hover:bg-purple-600 rounded px-3 py-2">
+              <Link to="/formulario" className="block text-white hover:bg-purple-600 rounded px-3 py-2">
                 Historial
               </Link>
-              <Link to="/contacto" className="block text-white hover:bg-purple-600 rounded px-3 py-2">
+              <Link to="/formulario" className="block text-white hover:bg-purple-600 rounded px-3 py-2">
                 Contacto
               </Link>
               <button className="w-full text-center bg-white text-purple-500 px-4 py-2 rounded-lg font-medium hover:bg-purple-100 transition-colors duration-200">
