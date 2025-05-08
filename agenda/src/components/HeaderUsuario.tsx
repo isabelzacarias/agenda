@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const Header = () => {
+const HeaderUsuario = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -18,14 +18,9 @@ const Header = () => {
           </div>
 
 
-          <div className="hidden md:flex items-center space-x-4">
-            <Link to="/login" className="text-purple-600 border border-purple-600 px-4 py-2 rounded-lg font-medium transition-colors duration-200 hover:bg-purple-600 hover:text-white"
-            >
-              Iniciar Sesión
-            </Link>
-          </div>
+          
 
-          <button
+          <button 
             className="md:hidden bg-purple-400 text-purple-800 p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -39,10 +34,10 @@ const Header = () => {
           </button>
         </div>
 
-
+        
       </div>
     </header>
   );
 };
 
-export default Header;
+export default HeaderUsuario;
