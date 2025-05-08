@@ -1,16 +1,18 @@
 
-import Header from '../components/Header';
+import Header from '../components/HeaderUsuario';
 import Footer from '../components/Footer';
+import Nav from '../components/Nav';
 
-
-const Home = () => {
+const HomeUsuario = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-     
+      <Nav />
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="space-y-8">
-          
+          <h1 className="text-4xl font-extrabold text-center text-blue-500">
+            ¡Bienvenido a tus citas!
+          </h1>
           
           <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg p-6">
             <h2 className="text-2xl font-semibold">Información Principal</h2>
@@ -27,9 +29,9 @@ const Home = () => {
           </div>
         </div>
       </main>
-      <Footer />
+        <Footer />
     </div>
   );
 };
 
-export default Home;
+export default HomeUsuario;

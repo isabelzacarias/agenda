@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import FormularioEjemplo from "../pages/formularioEjemplo";
+import Login from "../pages/Login";
+import HomeUsuario from "../pages/HomeUsuario";
 /*
 import ProductDetail from "../pages/ProductDetail";
 import Cart from "../pages/Cart";
@@ -14,6 +16,18 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/formulario" element={<FormularioEjemplo />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/homeusuario" element={<HomeUsuario />} />
+        {/* Rutas comentadas para futuras implementaciones */}
+        {/* <Route path="/productos" element={<ListaProductos />} /> */}
+        {/* <Route path="/productos/:id" element={<ProductDetail />} /> */}
+        {/* <Route path="/cart" element={<Cart />} /> */}
+        {/* <Route path="/productos" element={<ListaProductos />} /> */}
+        {/* <Route path="*" element={<NotFound />} /> */}
+        {/* <Route path="/productos/:id" element={<ProductDetail />} /> */}
+        {/* <Route path="/cart" element={<Cart />} /> */}
+        {/* <Route path="/productos" element={<ListaProductos />} /> */}
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </>
   );
