@@ -1,5 +1,7 @@
 import Header from '../components/HeaderUsuario';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
+
 
 const Login = () => {
   return (
@@ -35,12 +37,18 @@ const Login = () => {
             >
               Ingresar
             </button>
-            <button
-              type="button"
-              className="w-full bg-purple-600 text-white py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
+            <Link 
+              to="/registro" 
+              className="w-full bg-green-300 text-white py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center"
             >
-              Regresar
-            </button>
+              Registrate
+            </Link>
+            <Link 
+              to="/pantallaCarga" 
+              className="w-full bg-red-600 text-white py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center"
+            >
+              Iniciar Sesión
+            </Link>
           </form>
         </div>
       </main>

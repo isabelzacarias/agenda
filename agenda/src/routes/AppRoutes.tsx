@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import FormularioEjemplo from "../pages/formularioEjemplo";
 import Login from "../pages/Login";
 import HomeUsuario from "../pages/HomeUsuario";
+import Loader from "../pages/Loaders";
 /*
 import ProductDetail from "../pages/ProductDetail";
 import Cart from "../pages/Cart";
@@ -18,6 +19,7 @@ const AppRoutes = () => {
         <Route path="/formulario" element={<FormularioEjemplo />} />
         <Route path="/login" element={<Login />} />
         <Route path="/homeusuario" element={<HomeUsuario />} />
+        <Route path="/pantallaCarga" element={<Loader />} />
         {/* Rutas comentadas para futuras implementaciones */}
         {/* <Route path="/productos" element={<ListaProductos />} /> */}
         {/* <Route path="/productos/:id" element={<ProductDetail />} /> */}
